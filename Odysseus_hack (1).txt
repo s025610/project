@@ -1,0 +1,298 @@
+// Name: HAILEY - LOWER MERION HIGH SCHOOL
+// Date: Dec 19, 2024
+// Title: Odysseus_hack.java
+// Description: Text Adventure - Odysseus chooses which form of help he wants in order for his plan to be effective
+
+import java.util.Scanner;
+public class Odysseus_hack {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+
+		System.out.println("                         ______");
+
+		System.out.println(" ________________________/ /\\ \\________________________ ");
+
+		System.out.println(" S E N A T V S   P O P V L V S Q V E   R O M A N V S ");
+
+		System.out.println(" \\________________________________________________/ ");
+
+		System.out.println("                      \\_______/                      ");
+
+		System.out.println("                      _/ _/\\_ \\_                    ");
+
+		System.out.println("                     _/ S.P.Q.R.\\_                  ");
+
+		System.out.println("                   -----------------");
+
+		System.out.println();
+
+		System.out.println("Hello, Odysseus, your strenous journey requires help, before you begin your quest choose your form of help- enter the \n: "
+				+"the number which corresponds with your choice");
+		System.out.println("(1) Predict your future");
+		System.out.println("(2) Speak with the Gods");
+		String help = s.nextLine();
+
+		if(help.equals ("1")) {
+			System.out.println("Welcome to The Trojan Horse Adventure! You are Odysseus, the clever Greek warrior. \n"+
+					"Your goal is to lead the Greeks to victory in Troy. To know your future choose wisely, or else... your live's story will end...");
+			System.out.println();
+			System.out.println("The sun was setting on the shores of Troy, painting the horizon in hues of blood-red and gold. \n"+
+					"The Trojan Horse, an enormous wooden structure, stood ominously, as a deceptive gift to the Trojans, crafted by the Greeks\n"+
+					"under your cunning plan. ");
+			System.out.println();
+			System.out.println("But you were no stranger to contingencies. Before embarking on the journey inside the Horse, \n"+
+					"you had visited Athena’s shrine in search of guidance. The goddess of wisdom had foreseen the perils that lay ahead—not \n"+
+					"just in convincing the Trojans to accept the Horse but in navigating the chaos once the Greeks emerged.");
+			System.out.println();
+
+
+			System.out.println("Here is your first decision Odysseus - The Goddess Athena of Wisdom has offered to you The Aegis Orb, \n"
+					+ "it is mystical and said to be full of power, but it looks very suspicious. It may even give more help.. What do you do \n "
+					+ "- enter the word within the parenthesies - (accept) the orb or (reject) it?") ;
+			String orb = s.nextLine();
+
+			if(orb.equals ("accept")) {
+				System.out.println("To help you, Athena bestowed a curious artifact: the Aegis Orb. Small enough to fit in your palm, the orb \n"
+						+ "shimmered faintly, almost alive. \"This,\" Athena had whispered, \"is a gift for your wit and foresight. It shall \n"
+						+ "serve " + "you when mortal strength and swords falter.\" The Aegis orb allows you to, listen to conversations outside \n"
+						+ "the horse, emit a faint distraction sound, and illuminate a path for escape.");
+				System.out.println();
+				System.out.println("You get set up in the Trojan horse and you feel the ground tremble as the horse gets dragged to Troy. Your \n"
+						+ "audacious plan is working. It is the the moment you prepared for. It's dark, cramped, and the waiting period was excrutiating,\n "
+						+ "wondering if the plan would would work. Now, do you use to orb to listen in to the conversations (outside) or do you proceed (quitely)");
+				String plan = s.nextLine();
+				if(plan.equals("outside")) {
+					System.out.println("You use the orb to eavesdrop outside the horse. You found out that the Trojans were debating about a  suspicion about the horse\n"+
+							" but they had ignored it. Your future looks promising. Onto your next desicion to make, you hear the Trojans celebrating their victory. Do you plan to wait \n"+
+							"until they fall (asleep) to attack? Or do you attack (now)");
+					String attack = s.nextLine();
+					if(attack.equals("asleep")) {
+						System.out.println("You wait patiently. At nightfall, the city is left unguarded. You lead your warriors to the palace. Do you: \n"
+								+"use the Aegis Orb to illuminate your (path), or rely on your (memory)?");
+						String palace = s.nextLine();
+						if (palace.equals("path")) {
+							System.out.println("The Orb's light guides your warriors safely to the palace gate. To ensure a safe entry you must destroy\n"+
+									"Troys defenses. Do you use the orb (again) to create a distraction, or do you use brute (force) to open the gates?");
+							String choice = s.nextLine();
+							if(choice.equals ("again")) {
+								System.out.println("The distraction works and the city gates are unlocked! The city is now in chaos, but you need an escape route!\n"+
+										"Do you (destroy) the orb to shroud your army in the mist, or do you keep the orb for (future) use?");
+								String army = s.nextLine();
+								if(army.equals ("future")) {
+									System.out.println("The mist conceals you army, and you escape safely. You have led the greeks to victory. Congratulations, YOU WIN!");
+									//WINNING ENDING
+								}else {
+									System.out.println("The trojans discover traces of the orb's magic and track you down. You are ambushed on your way to the ships. Your future is grim. GAME OVER");
+								}// END OF GAME
+							}else {
+								System.out.println("Your brute force alerts the guards and you are overwhelmed! Your future is at risk with this path! GAME OVER");
+							}//END OF GAME
+						}else {
+							System.out.println("Your memory is not to great Odysseus, you get lost in the city and the trojans wake up and ambush you! Your future is Grim!\n"+
+									"GAME OVER!");
+						}// END OF GAME
+					}else {
+						System.out.println("You emerge early to attack during the celebrations. The trojans spot you emerging from the horse and capture you\n"+
+								"Your future is at risk. GAME OVER");
+					}//END OF GAME
+				} else{
+					System.out.println("That was the wrong choice Odysseus. You should have used the orb to your advantage. The people outside figured out your \n"
+							+ "plan. They suspected your trap and decided to burn down the horse. You and your warriors perish. Your future is at risk is you take this route. GAME OVER");
+					//END OF GAME 
+				}
+
+			} else {
+				System.out.println("You don't accept the orb which makes you more vulnerable. But that is fine, you will just have a disadvantage \n"
+						+ "and must rely on your skills alone to survive.");
+				System.out.println("You get set up in the Trojan horse and you feel the ground tremble as the horse gets dragged to Troy. Your \n"
+						+ "audacious plan is working. It is the the moment you prepared for. It's dark, cramped, and the waiting period was excrutiating,\n "
+						+ "wondering if the plan would would work. Now, do you try to listen to the conversations outside (outside) or do you proceed (quietly)");
+				String plan1 = s.nextLine();
+				System.out.println();
+				if(plan1.equals("outside")) {
+					System.out.println("You put your ear against the wooden frame but all you manage to hear is a murmur. You can't make out the voices or what \n"
+							+ "they're saying. All you can do now is stay as quiet as possible. Soon after, you hear that their murmurs quiet down. You breath a sigh \n"
+							+ "of relief. You're safe for now. Onto your next desicion to make, you hear the Trojans celebrating their victory. Do you plan to wait \n"+
+							"until they fall (asleep) to attack? Or do you attack (now)");
+					String attack1 = s.nextLine();
+					if(attack1.equals("asleep")) {
+						System.out.println("You wait patiently. At nightfall, the city is left unguarded. You lead your warriors to the palace. Do you: \n"
+								+"rely on the dim moonlight (moonlight), or rely on your (memory)?");
+						String palace1 = s.nextLine();
+						if (palace1.equals("memory")) {
+							System.out.println("Your memory is enough to guide your warriors safely and quietly to the palace gate. To ensure a safe entry \n"
+									+ "you must destroy Troys defenses. Do you throw a coin into the hallway to distract(coin), or do you use brute (force) to open \n"
+									+ "the gates?");
+							String choice1 = s.nextLine();
+							if(choice1.equals ("coin")) {
+								System.out.println("The distraction works and the city gates are unlocked! The city is now in chaos, but you need an escape route!\n"+
+										"Do you escape through the crowd and blend in(crowd), or do you split up and go through abandoned alleyways(alleys)?");
+								String army1 = s.nextLine();
+								if(army1.equals ("crowd")) {
+									System.out.println("Blending into the crowd worked! The Trojan warriors couldn't catch everyone as there was much chaos. Congratulations, YOU WIN!");
+									//WINNING ENDING
+								}else {
+									System.out.println("The trojans were able to single out all of your warriors and capture them. Your future is grim. GAME OVER");
+								}// END OF GAME
+							}else {
+								System.out.println("Your brute force alerts the guards and you are overwhelmed! Your future is at risk with this path! GAME OVER");
+							}//END OF GAME
+						}else {
+							System.out.println("The moonlight was not enough to guide you and your warriors safely. Your future is Grim!\n"+
+									"GAME OVER!");
+						}// END OF GAME
+					}else {
+						System.out.println("You emerge early to attack during the celebrations. The trojans spot you emerging from the horse and capture you\n"+
+								"Your future is at risk. GAME OVER");
+					}//END OF GAME
+				} else{
+					System.out.println("That was the wrong choice Odysseus. You should have used the orb to your advantage. The people outside figured out your \n"
+							+ "plan. They suspected your trap and decided to burn down the horse. You and your warriors perish. Your future is at risk is you take this route. GAME OVER");
+					//END OF GAME 
+				}
+
+			}
+
+
+
+
+		}
+		if(help.equals("2")) {
+
+			System.out.println("Pick a god -> 1. athena, 2. artemis, 3. ares, 4. dionysus");
+
+			int god = s.nextInt();
+
+			if (god==1) {
+
+				System.out.println("Congrats on choosing Athena! She speaks to you and says: Salve Odysseus! Ego vult dare tu aegis orb. Ego auxilium tuus. [Hello Odysseus! I want to give you the Aegis Orb. I will give you help.]");
+
+				System.out.println("will you accept the help? 1. yes or 2. no");
+
+				int athena = s.nextInt();
+
+				if (athena==1) {
+
+					System.out.println("You use the orb to defeat the Tojans and you are victorius and a hero!! You WIN!!");
+
+				}
+
+				else if (athena == 2) {
+
+
+
+					System.out.println("Athena takes out her wrath on you and you die. GAME OVER!");
+
+				}
+
+				else {
+
+					System.out.println("invalid");
+
+				}
+
+			}
+
+
+
+
+
+			else if (god==2) {
+
+				System.out.println("Congrats on choosing Artemis! She speaks to you and says: Salve Odysseus! Ego vult dare tu specialis arcus et sagitta. Ego auxilium tuus. [Hello Odysseus! I want to give you a special bow and arow. I will give you help.]");
+
+				System.out.println("will you accept the help? 1. yes or 2. no");
+
+				int artemis = s.nextInt();
+
+				if (artemis==1) {
+
+					System.out.println("You use the bow and arow to defeat the Tojans and you are victorius and a hero!! The arow killed every trojan whom you encounter. You WIN!!");
+
+				}
+
+				else if (artemis == 2) {
+
+
+
+					System.out.println("Artemis takes the bow and arow and shoots you! You die and know you chose wrong... GAME OVER!");
+
+				}
+
+				else {
+
+					System.out.println("invalid");
+
+				}
+
+
+
+
+
+			}
+
+
+
+			else if (god==3) {
+
+				System.out.println("Congrats on choosing Ares! He speaks to you and says: Salve Odysseus! Ego vult dare tu arma magica. Ego auxilium tuus. [Hello Odysseus! I want to give you magic wepons and armor. I will give you help.]");
+
+				System.out.println("will you accept the help? 1. yes or 2. no");
+
+				int ares = s.nextInt();
+
+				if (ares==1) {
+
+					System.out.println("You put on the armor and relize that it makes you light on your feet and a much better fighter. You use your newfound strength to overpower the trojans. You become a well known hero! You WIN!!");
+
+				}
+
+				else if (ares == 2) {
+
+
+
+					System.out.println("Ares comes to earth in his human form and kills you. GAME OVER!");
+
+				}
+
+				else {
+
+					System.out.println("invalid");
+
+				}
+
+			}
+
+
+
+			else if(god==4) {
+
+				System.out.println("Congrats on choosing Dionysus! He speaks to you and says: Salve Odysseus! Ego vult dare tu aquam magica. Ego auxilium tuus. [Hello Odysseus! I want to give you magic water and armor. I will give you help.]");
+
+				System.out.println("will you accept the help? 1. yes or 2. no");
+
+				int Dionysus = s.nextInt();
+
+				if (Dionysus==1) {
+
+					System.out.println("You drink the \"special drink\" and you go party all night. You don't remember anything but when you wake up, you find all of the greek soldiers dead and the trojans have won the war. Game over -> you lose");
+
+				}
+
+				else if (Dionysus == 2) {
+
+
+
+					System.out.println("Dionysus comes to earth in his human form has a group of centaurs attack you. GAME OVER!");
+
+				}else {
+					System.out.println("Invalid");
+				}
+			}
+		}
+
+		//Put 2 here
+
+	}}
+//
